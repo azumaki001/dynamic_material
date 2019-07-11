@@ -1,0 +1,1959 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxReport xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="Microsoft.Dynamics.AX.Metadata.V2">
+	<Name>Z_SonotaUkebaraiReport</Name>
+	<DataMethods />
+	<DataSets>
+		<AxReportDataSet xmlns="">
+			<Name>Z_SonotaUkebaraiDS</Name>
+			<DataSourceType>ReportDataProvider</DataSourceType>
+			<Query>SELECT * FROM Z_SonotaUkebaraiRDP.sTmp</Query>
+			<FieldGroups />
+			<Fields>
+				<AxReportDataSetField>
+					<Name>CostPrice</Name>
+					<Alias>Z_SonotaUkebaraiReportTmp.1.CostPrice</Alias>
+					<Caption>@SYS13134</Caption>
+					<DataType>System.Double</DataType>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>InventLocationId1</Name>
+					<Alias>Z_SonotaUkebaraiReportTmp.1.InventLocationId</Alias>
+					<Caption>@SYS6437</Caption>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>ItemId</Name>
+					<Alias>Z_SonotaUkebaraiReportTmp.1.ItemId</Alias>
+					<Caption>@SYS12836</Caption>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>JournalId1</Name>
+					<Alias>Z_SonotaUkebaraiReportTmp.1.JournalId</Alias>
+					<Caption>@SYS6790</Caption>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>JournalNameId1</Name>
+					<Alias>Z_SonotaUkebaraiReportTmp.1.JournalNameId</Alias>
+					<Caption>@SYS7399</Caption>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>Number</Name>
+					<Alias>Z_SonotaUkebaraiReportTmp.1.Number</Alias>
+					<DataType>System.Int32</DataType>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>Qty</Name>
+					<Alias>Z_SonotaUkebaraiReportTmp.1.Qty</Alias>
+					<Caption>@SYS14578</Caption>
+					<DataType>System.Double</DataType>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>TransDate</Name>
+					<Alias>Z_SonotaUkebaraiReportTmp.1.TransDate</Alias>
+					<Caption>@SYS7402</Caption>
+					<DataType>System.DateTime</DataType>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>Z_GenkaCenter</Name>
+					<Alias>Z_SonotaUkebaraiReportTmp.1.Z_GenkaCenter</Alias>
+					<Caption>@PRS00063</Caption>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>Z_UkeharaiRiyu</Name>
+					<Alias>Z_SonotaUkebaraiReportTmp.1.Z_UkeharaiRiyu</Alias>
+					<Caption>@PRS00172</Caption>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>Z_WBSCd</Name>
+					<Alias>Z_SonotaUkebaraiReportTmp.1.Z_WBSCd</Alias>
+					<Caption>@PRS00157</Caption>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+				<AxReportDataSetField>
+					<Name>itemName</Name>
+					<Alias>Z_SonotaUkebaraiReportTmp.1.itemName</Alias>
+					<DisplayWidth>Auto</DisplayWidth>
+					<UserDefined>false</UserDefined>
+				</AxReportDataSetField>
+			</Fields>
+			<Parameters>
+				<AxReportDataSetParameter>
+					<Name>AX_PartitionKey</Name>
+					<Alias>AX_PartitionKey</Alias>
+					<DataType>System.String</DataType>
+					<Parameter>AX_PartitionKey</Parameter>
+				</AxReportDataSetParameter>
+				<AxReportDataSetParameter>
+					<Name>AX_CompanyName</Name>
+					<Alias>AX_CompanyName</Alias>
+					<DataType>System.String</DataType>
+					<Parameter>AX_CompanyName</Parameter>
+				</AxReportDataSetParameter>
+				<AxReportDataSetParameter>
+					<Name>AX_UserContext</Name>
+					<Alias>AX_UserContext</Alias>
+					<DataType>System.String</DataType>
+					<Parameter>AX_UserContext</Parameter>
+				</AxReportDataSetParameter>
+				<AxReportDataSetParameter>
+					<Name>AX_RenderingCulture</Name>
+					<Alias>AX_RenderingCulture</Alias>
+					<DataType>System.String</DataType>
+					<Parameter>AX_RenderingCulture</Parameter>
+				</AxReportDataSetParameter>
+				<AxReportDataSetParameter>
+					<Name>AX_ReportContext</Name>
+					<Alias>AX_ReportContext</Alias>
+					<DataType>System.String</DataType>
+					<Parameter>AX_ReportContext</Parameter>
+				</AxReportDataSetParameter>
+				<AxReportDataSetParameter>
+					<Name>AX_RdpPreProcessedId</Name>
+					<Alias>AX_RdpPreProcessedId</Alias>
+					<DataType>System.String</DataType>
+					<Parameter>AX_RdpPreProcessedId</Parameter>
+				</AxReportDataSetParameter>
+				<AxReportDataSetParameter>
+					<Name>jid</Name>
+					<Alias>jid</Alias>
+					<DataType>System.String</DataType>
+					<Parameter>Z_SonotaUkebaraiDS_jid</Parameter>
+				</AxReportDataSetParameter>
+				<AxReportDataSetParameter>
+					<Name>Z_SONOTAUKEBARAIRDP_DynamicParameter</Name>
+					<Alias>Z_SONOTAUKEBARAIRDP_DynamicParameter</Alias>
+					<DataType>Microsoft.Dynamics.AX.Framework.Services.Client.QueryMetadata</DataType>
+					<Parameter>Z_SONOTAUKEBARAIRDP_DynamicParameter</Parameter>
+				</AxReportDataSetParameter>
+			</Parameters>
+		</AxReportDataSet>
+	</DataSets>
+	<DefaultParameterGroup>
+		<Name xmlns="">Parameters</Name>
+		<ReportParameterBases xmlns="">
+			<AxReportParameterBase xmlns=""
+				i:type="AxReportParameter">
+				<Name>SonotaUkebaraiDS_DynamicParameter</Name>
+				<AOTQuery>SonotaUkebaraiQuery</AOTQuery>
+				<AllowBlank>true</AllowBlank>
+				<DataType>Microsoft.Dynamics.AX.Framework.Services.Client.QueryMetadata</DataType>
+				<Nullable>true</Nullable>
+				<UserVisibility>Hidden</UserVisibility>
+				<DefaultValue />
+				<Values />
+			</AxReportParameterBase>
+			<AxReportParameterBase xmlns=""
+				i:type="AxReportParameter">
+				<Name>AX_PartitionKey</Name>
+				<AllowBlank>true</AllowBlank>
+				<Nullable>true</Nullable>
+				<UserVisibility>Hidden</UserVisibility>
+				<DefaultValue />
+				<Values />
+			</AxReportParameterBase>
+			<AxReportParameterBase xmlns=""
+				i:type="AxReportParameter">
+				<Name>AX_CompanyName</Name>
+				<UserVisibility>Hidden</UserVisibility>
+				<DefaultValue />
+				<Values />
+			</AxReportParameterBase>
+			<AxReportParameterBase xmlns=""
+				i:type="AxReportParameter">
+				<Name>AX_UserContext</Name>
+				<AllowBlank>true</AllowBlank>
+				<Nullable>true</Nullable>
+				<UserVisibility>Hidden</UserVisibility>
+				<DefaultValue />
+				<Values />
+			</AxReportParameterBase>
+			<AxReportParameterBase xmlns=""
+				i:type="AxReportParameter">
+				<Name>AX_RenderingCulture</Name>
+				<AllowBlank>true</AllowBlank>
+				<Nullable>true</Nullable>
+				<UserVisibility>Hidden</UserVisibility>
+				<DefaultValue />
+				<Values />
+			</AxReportParameterBase>
+			<AxReportParameterBase xmlns=""
+				i:type="AxReportParameter">
+				<Name>AX_ReportContext</Name>
+				<AllowBlank>true</AllowBlank>
+				<Nullable>true</Nullable>
+				<UserVisibility>Hidden</UserVisibility>
+				<DefaultValue />
+				<Values />
+			</AxReportParameterBase>
+			<AxReportParameterBase xmlns=""
+				i:type="AxReportParameter">
+				<Name>AX_RdpPreProcessedId</Name>
+				<AllowBlank>true</AllowBlank>
+				<Nullable>true</Nullable>
+				<UserVisibility>Hidden</UserVisibility>
+				<DefaultValue />
+				<Values />
+			</AxReportParameterBase>
+			<AxReportParameterBase xmlns=""
+				i:type="AxReportParameter">
+				<Name>Z_SonotaUkebaraiDS_jid</Name>
+				<DefaultValue />
+				<Values />
+			</AxReportParameterBase>
+			<AxReportParameterBase xmlns=""
+				i:type="AxReportParameter">
+				<Name>Z_SONOTAUKEBARAIRDP_DynamicParameter</Name>
+				<AOTQuery>Z_SonotaUkebaraiQuery</AOTQuery>
+				<AllowBlank>true</AllowBlank>
+				<DataType>Microsoft.Dynamics.AX.Framework.Services.Client.QueryMetadata</DataType>
+				<Nullable>true</Nullable>
+				<UserVisibility>Hidden</UserVisibility>
+				<DefaultValue />
+				<Values />
+			</AxReportParameterBase>
+		</ReportParameterBases>
+	</DefaultParameterGroup>
+	<Designs>
+		<AxReportDesign xmlns=""
+			i:type="AxReportPrecisionDesign">
+			<Name>Z_SonotaUkebaraiDesign</Name>
+			<Text>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition"&gt;
+  &lt;AutoRefresh&gt;0&lt;/AutoRefresh&gt;
+  
+  
+  &lt;ReportSections&gt;
+    &lt;ReportSection&gt;
+      &lt;Body&gt;
+        &lt;ReportItems&gt;
+          &lt;Tablix Name="Tablix1"&gt;
+            &lt;TablixBody&gt;
+              &lt;TablixColumns&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;4.08309cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;4.08309cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;4.08309cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;4.08309cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;4.08309cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;4.08309cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+              &lt;/TablixColumns&gt;
+              &lt;TablixRows&gt;
+                &lt;TablixRow&gt;
+                  &lt;Height&gt;0.6cm&lt;/Height&gt;
+                  &lt;TablixCells&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox3"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;日付&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox3&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;BottomBorder&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/BottomBorder&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox5"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;品名&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox5&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;BottomBorder&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/BottomBorder&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox27"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;倉庫&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox27&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;BottomBorder&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/BottomBorder&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox7"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;数量&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox7&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;BottomBorder&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/BottomBorder&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox15"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;原価センター&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox15&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;BottomBorder&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/BottomBorder&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox18"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;受払理由&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox18&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;BottomBorder&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/BottomBorder&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                  &lt;/TablixCells&gt;
+                &lt;/TablixRow&gt;
+                &lt;TablixRow&gt;
+                  &lt;Height&gt;0.6cm&lt;/Height&gt;
+                  &lt;TablixCells&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox9"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value /&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox9&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;TopBorder&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/TopBorder&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox10"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value /&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox10&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;TopBorder&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/TopBorder&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox28"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value /&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox28&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;TopBorder&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/TopBorder&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox11"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;単価&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox11&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;TopBorder&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/TopBorder&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox16"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;WBSコード&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox16&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;TopBorder&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/TopBorder&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox19"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value /&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox19&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;TopBorder&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/TopBorder&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                  &lt;/TablixCells&gt;
+                &lt;/TablixRow&gt;
+                &lt;TablixRow&gt;
+                  &lt;Height&gt;0.6cm&lt;/Height&gt;
+                  &lt;TablixCells&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="TransDate"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;=Fields!TransDate.Value&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;TransDate&lt;/rd:DefaultName&gt;
+                          &lt;CustomProperties&gt;
+                            &lt;CustomProperty&gt;
+                              &lt;Name&gt;AXDataType&lt;/Name&gt;
+                              &lt;Value&gt;DateTime&lt;/Value&gt;
+                            &lt;/CustomProperty&gt;
+                          &lt;/CustomProperties&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="ItemId"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;=Fields!ItemId.Value &amp;amp; vbCrLf &amp;amp; Fields!itemName.Value&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;ItemId&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="InventLocationId1"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;=Fields!InventLocationId1.Value&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;InventLocationId1&lt;/rd:DefaultName&gt;
+                          &lt;CustomProperties&gt;
+                            &lt;CustomProperty&gt;
+                              &lt;Name&gt;AXDataType&lt;/Name&gt;
+                              &lt;Value&gt;String&lt;/Value&gt;
+                            &lt;/CustomProperty&gt;
+                          &lt;/CustomProperties&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Qty"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;=Fields!Qty.Value &amp;amp; vbCrLf &amp;amp; Fields!CostPrice.Value&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Qty&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Z_GenkaCenter"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;=Fields!Z_GenkaCenter.Value &amp;amp; vbCrLf &amp;amp; Fields!Z_WBSCd.Value&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Z_GenkaCenter&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Z_UkeharaiRiyu"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;=Fields!Z_UkeharaiRiyu.Value&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Z_UkeharaiRiyu&lt;/rd:DefaultName&gt;
+                          &lt;CustomProperties&gt;
+                            &lt;CustomProperty&gt;
+                              &lt;Name&gt;AXDataType&lt;/Name&gt;
+                              &lt;Value&gt;String&lt;/Value&gt;
+                            &lt;/CustomProperty&gt;
+                          &lt;/CustomProperties&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                  &lt;/TablixCells&gt;
+                &lt;/TablixRow&gt;
+              &lt;/TablixRows&gt;
+            &lt;/TablixBody&gt;
+            &lt;TablixColumnHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember /&gt;
+                &lt;TablixMember /&gt;
+                &lt;TablixMember /&gt;
+                &lt;TablixMember /&gt;
+                &lt;TablixMember /&gt;
+                &lt;TablixMember /&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixColumnHierarchy&gt;
+            &lt;TablixRowHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember&gt;
+                  &lt;KeepWithGroup&gt;After&lt;/KeepWithGroup&gt;
+                  &lt;RepeatOnNewPage&gt;true&lt;/RepeatOnNewPage&gt;
+                &lt;/TablixMember&gt;
+                &lt;TablixMember&gt;
+                  &lt;KeepWithGroup&gt;After&lt;/KeepWithGroup&gt;
+                  &lt;RepeatOnNewPage&gt;true&lt;/RepeatOnNewPage&gt;
+                &lt;/TablixMember&gt;
+                &lt;TablixMember&gt;
+                  &lt;Group Name="Group1"&gt;
+                    &lt;GroupExpressions&gt;
+                      &lt;GroupExpression&gt;=Fields!Number.Value&lt;/GroupExpression&gt;
+                    &lt;/GroupExpressions&gt;
+                    &lt;PageBreak&gt;
+                      &lt;BreakLocation&gt;Between&lt;/BreakLocation&gt;
+                    &lt;/PageBreak&gt;
+                  &lt;/Group&gt;
+                  &lt;SortExpressions&gt;
+                    &lt;SortExpression&gt;
+                      &lt;Value&gt;ceiling(rownumber(nothing)/8)&lt;/Value&gt;
+                    &lt;/SortExpression&gt;
+                  &lt;/SortExpressions&gt;
+                  &lt;TablixMembers&gt;
+                    &lt;TablixMember&gt;
+                      &lt;Group Name="Details" /&gt;
+                    &lt;/TablixMember&gt;
+                  &lt;/TablixMembers&gt;
+                &lt;/TablixMember&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixRowHierarchy&gt;
+            &lt;RepeatColumnHeaders&gt;true&lt;/RepeatColumnHeaders&gt;
+            &lt;DataSetName&gt;Z_SonotaUkebaraiDS&lt;/DataSetName&gt;
+            &lt;Top&gt;4.17725cm&lt;/Top&gt;
+            &lt;Left&gt;0.47308cm&lt;/Left&gt;
+            &lt;Height&gt;1.8cm&lt;/Height&gt;
+            &lt;Width&gt;24.49854cm&lt;/Width&gt;
+            &lt;Style&gt;
+              &lt;Border&gt;
+                &lt;Style&gt;None&lt;/Style&gt;
+              &lt;/Border&gt;
+            &lt;/Style&gt;
+          &lt;/Tablix&gt;
+          &lt;Tablix Name="Tablix2"&gt;
+            &lt;TablixCorner&gt;
+              &lt;TablixCornerRows&gt;
+                &lt;TablixCornerRow&gt;
+                  &lt;TablixCornerCell&gt;
+                    &lt;CellContents&gt;
+                      &lt;Textbox Name="Textbox33"&gt;
+                        &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                        &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                        &lt;Paragraphs&gt;
+                          &lt;Paragraph&gt;
+                            &lt;TextRuns&gt;
+                              &lt;TextRun&gt;
+                                &lt;Value&gt;発生年月日&lt;/Value&gt;
+                                &lt;Style /&gt;
+                              &lt;/TextRun&gt;
+                            &lt;/TextRuns&gt;
+                            &lt;Style /&gt;
+                          &lt;/Paragraph&gt;
+                        &lt;/Paragraphs&gt;
+                        &lt;rd:DefaultName&gt;Textbox33&lt;/rd:DefaultName&gt;
+                        &lt;Style&gt;
+                          &lt;Border&gt;
+                            &lt;Color&gt;LightGrey&lt;/Color&gt;
+                            &lt;Style&gt;Solid&lt;/Style&gt;
+                          &lt;/Border&gt;
+                          &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                          &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                          &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                          &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                        &lt;/Style&gt;
+                      &lt;/Textbox&gt;
+                    &lt;/CellContents&gt;
+                  &lt;/TablixCornerCell&gt;
+                &lt;/TablixCornerRow&gt;
+              &lt;/TablixCornerRows&gt;
+            &lt;/TablixCorner&gt;
+            &lt;TablixBody&gt;
+              &lt;TablixColumns&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;4.08309cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+              &lt;/TablixColumns&gt;
+              &lt;TablixRows&gt;
+                &lt;TablixRow&gt;
+                  &lt;Height&gt;0.6cm&lt;/Height&gt;
+                  &lt;TablixCells&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="JournalNameId1"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;=Fields!JournalNameId1.Value&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;JournalNameId1&lt;/rd:DefaultName&gt;
+                          &lt;CustomProperties&gt;
+                            &lt;CustomProperty&gt;
+                              &lt;Name&gt;AXDataType&lt;/Name&gt;
+                              &lt;Value&gt;String&lt;/Value&gt;
+                            &lt;/CustomProperty&gt;
+                          &lt;/CustomProperties&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                  &lt;/TablixCells&gt;
+                &lt;/TablixRow&gt;
+              &lt;/TablixRows&gt;
+            &lt;/TablixBody&gt;
+            &lt;TablixColumnHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember&gt;
+                  &lt;Group Name="ColumnGroup"&gt;
+                    &lt;GroupExpressions&gt;
+                      &lt;GroupExpression /&gt;
+                    &lt;/GroupExpressions&gt;
+                  &lt;/Group&gt;
+                  &lt;TablixHeader&gt;
+                    &lt;Size&gt;0.6cm&lt;/Size&gt;
+                    &lt;CellContents&gt;
+                      &lt;Textbox Name="Textbox31"&gt;
+                        &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                        &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                        &lt;Paragraphs&gt;
+                          &lt;Paragraph&gt;
+                            &lt;TextRuns&gt;
+                              &lt;TextRun&gt;
+                                &lt;Value&gt;在庫仕訳帳名&lt;/Value&gt;
+                                &lt;Style /&gt;
+                              &lt;/TextRun&gt;
+                            &lt;/TextRuns&gt;
+                            &lt;Style /&gt;
+                          &lt;/Paragraph&gt;
+                        &lt;/Paragraphs&gt;
+                        &lt;rd:DefaultName&gt;Textbox31&lt;/rd:DefaultName&gt;
+                        &lt;Style&gt;
+                          &lt;Border&gt;
+                            &lt;Color&gt;LightGrey&lt;/Color&gt;
+                            &lt;Style&gt;Solid&lt;/Style&gt;
+                          &lt;/Border&gt;
+                          &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                          &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                          &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                          &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                        &lt;/Style&gt;
+                      &lt;/Textbox&gt;
+                    &lt;/CellContents&gt;
+                  &lt;/TablixHeader&gt;
+                &lt;/TablixMember&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixColumnHierarchy&gt;
+            &lt;TablixRowHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember&gt;
+                  &lt;Group Name="RowGroup"&gt;
+                    &lt;GroupExpressions&gt;
+                      &lt;GroupExpression /&gt;
+                    &lt;/GroupExpressions&gt;
+                  &lt;/Group&gt;
+                  &lt;TablixHeader&gt;
+                    &lt;Size&gt;4.08309cm&lt;/Size&gt;
+                    &lt;CellContents&gt;
+                      &lt;Textbox Name="Textbox30"&gt;
+                        &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                        &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                        &lt;Paragraphs&gt;
+                          &lt;Paragraph&gt;
+                            &lt;TextRuns&gt;
+                              &lt;TextRun&gt;
+                                &lt;Value&gt;=Format(Globals!ExecutionTime, "yyyy/MM/dd")&lt;/Value&gt;
+                                &lt;Style /&gt;
+                              &lt;/TextRun&gt;
+                            &lt;/TextRuns&gt;
+                            &lt;Style /&gt;
+                          &lt;/Paragraph&gt;
+                        &lt;/Paragraphs&gt;
+                        &lt;rd:DefaultName&gt;Textbox30&lt;/rd:DefaultName&gt;
+                        &lt;Style&gt;
+                          &lt;Border&gt;
+                            &lt;Color&gt;LightGrey&lt;/Color&gt;
+                            &lt;Style&gt;Solid&lt;/Style&gt;
+                          &lt;/Border&gt;
+                          &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                          &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                          &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                          &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                        &lt;/Style&gt;
+                      &lt;/Textbox&gt;
+                    &lt;/CellContents&gt;
+                  &lt;/TablixHeader&gt;
+                &lt;/TablixMember&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixRowHierarchy&gt;
+            &lt;DataSetName&gt;Z_SonotaUkebaraiDS&lt;/DataSetName&gt;
+            &lt;Top&gt;2.2637cm&lt;/Top&gt;
+            &lt;Left&gt;0.47308cm&lt;/Left&gt;
+            &lt;Height&gt;1.2cm&lt;/Height&gt;
+            &lt;Width&gt;8.16618cm&lt;/Width&gt;
+            &lt;ZIndex&gt;1&lt;/ZIndex&gt;
+            &lt;Style&gt;
+              &lt;Border&gt;
+                &lt;Style&gt;None&lt;/Style&gt;
+              &lt;/Border&gt;
+            &lt;/Style&gt;
+          &lt;/Tablix&gt;
+          &lt;Tablix Name="Tablix5"&gt;
+            &lt;TablixBody&gt;
+              &lt;TablixColumns&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;1.36229cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;1.36229cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+              &lt;/TablixColumns&gt;
+              &lt;TablixRows&gt;
+                &lt;TablixRow&gt;
+                  &lt;Height&gt;0.6cm&lt;/Height&gt;
+                  &lt;TablixCells&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox44"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;要求元&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox44&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                        &lt;ColSpan&gt;2&lt;/ColSpan&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell /&gt;
+                  &lt;/TablixCells&gt;
+                &lt;/TablixRow&gt;
+                &lt;TablixRow&gt;
+                  &lt;Height&gt;0.6cm&lt;/Height&gt;
+                  &lt;TablixCells&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox69"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value /&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox69&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox70"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value /&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox70&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                  &lt;/TablixCells&gt;
+                &lt;/TablixRow&gt;
+              &lt;/TablixRows&gt;
+            &lt;/TablixBody&gt;
+            &lt;TablixColumnHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember /&gt;
+                &lt;TablixMember /&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixColumnHierarchy&gt;
+            &lt;TablixRowHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember /&gt;
+                &lt;TablixMember /&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixRowHierarchy&gt;
+            &lt;Top&gt;2.2637cm&lt;/Top&gt;
+            &lt;Left&gt;8.99266cm&lt;/Left&gt;
+            &lt;Height&gt;1.2cm&lt;/Height&gt;
+            &lt;Width&gt;2.72458cm&lt;/Width&gt;
+            &lt;ZIndex&gt;2&lt;/ZIndex&gt;
+            &lt;Style&gt;
+              &lt;Border&gt;
+                &lt;Style&gt;None&lt;/Style&gt;
+              &lt;/Border&gt;
+            &lt;/Style&gt;
+          &lt;/Tablix&gt;
+          &lt;Tablix Name="Tablix7"&gt;
+            &lt;TablixBody&gt;
+              &lt;TablixColumns&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;1.36229cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;1.36229cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+              &lt;/TablixColumns&gt;
+              &lt;TablixRows&gt;
+                &lt;TablixRow&gt;
+                  &lt;Height&gt;0.6cm&lt;/Height&gt;
+                  &lt;TablixCells&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox50"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;事務G（経理）&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox44&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                        &lt;ColSpan&gt;2&lt;/ColSpan&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell /&gt;
+                  &lt;/TablixCells&gt;
+                &lt;/TablixRow&gt;
+                &lt;TablixRow&gt;
+                  &lt;Height&gt;0.6cm&lt;/Height&gt;
+                  &lt;TablixCells&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox74"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value /&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox74&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox75"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value /&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox75&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                  &lt;/TablixCells&gt;
+                &lt;/TablixRow&gt;
+              &lt;/TablixRows&gt;
+            &lt;/TablixBody&gt;
+            &lt;TablixColumnHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember /&gt;
+                &lt;TablixMember /&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixColumnHierarchy&gt;
+            &lt;TablixRowHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember /&gt;
+                &lt;TablixMember /&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixRowHierarchy&gt;
+            &lt;Top&gt;2.2637cm&lt;/Top&gt;
+            &lt;Left&gt;22.24704cm&lt;/Left&gt;
+            &lt;Height&gt;1.2cm&lt;/Height&gt;
+            &lt;Width&gt;2.72458cm&lt;/Width&gt;
+            &lt;ZIndex&gt;3&lt;/ZIndex&gt;
+            &lt;Style&gt;
+              &lt;Border&gt;
+                &lt;Style&gt;None&lt;/Style&gt;
+              &lt;/Border&gt;
+            &lt;/Style&gt;
+          &lt;/Tablix&gt;
+          &lt;Tablix Name="Tablix8"&gt;
+            &lt;TablixBody&gt;
+              &lt;TablixColumns&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;2.5cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+              &lt;/TablixColumns&gt;
+              &lt;TablixRows&gt;
+                &lt;TablixRow&gt;
+                  &lt;Height&gt;0.6cm&lt;/Height&gt;
+                  &lt;TablixCells&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox56"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;管理責任者&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox56&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                  &lt;/TablixCells&gt;
+                &lt;/TablixRow&gt;
+                &lt;TablixRow&gt;
+                  &lt;Height&gt;0.6cm&lt;/Height&gt;
+                  &lt;TablixCells&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox73"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value /&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox73&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                  &lt;/TablixCells&gt;
+                &lt;/TablixRow&gt;
+              &lt;/TablixRows&gt;
+            &lt;/TablixBody&gt;
+            &lt;TablixColumnHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember /&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixColumnHierarchy&gt;
+            &lt;TablixRowHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember /&gt;
+                &lt;TablixMember /&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixRowHierarchy&gt;
+            &lt;Top&gt;2.2637cm&lt;/Top&gt;
+            &lt;Left&gt;18.62349cm&lt;/Left&gt;
+            &lt;Height&gt;1.2cm&lt;/Height&gt;
+            &lt;Width&gt;2.5cm&lt;/Width&gt;
+            &lt;ZIndex&gt;4&lt;/ZIndex&gt;
+            &lt;Style&gt;
+              &lt;Border&gt;
+                &lt;Style&gt;None&lt;/Style&gt;
+              &lt;/Border&gt;
+            &lt;/Style&gt;
+          &lt;/Tablix&gt;
+          &lt;Tablix Name="Tablix9"&gt;
+            &lt;TablixBody&gt;
+              &lt;TablixColumns&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;2.0236cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;2.0236cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+              &lt;/TablixColumns&gt;
+              &lt;TablixRows&gt;
+                &lt;TablixRow&gt;
+                  &lt;Height&gt;0.6cm&lt;/Height&gt;
+                  &lt;TablixCells&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox62"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;在庫管理者&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox62&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox64"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;受取者&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox64&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                  &lt;/TablixCells&gt;
+                &lt;/TablixRow&gt;
+                &lt;TablixRow&gt;
+                  &lt;Height&gt;0.6cm&lt;/Height&gt;
+                  &lt;TablixCells&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox71"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value /&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox71&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox72"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value /&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox72&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Color&gt;LightGrey&lt;/Color&gt;
+                              &lt;Style&gt;Solid&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                  &lt;/TablixCells&gt;
+                &lt;/TablixRow&gt;
+              &lt;/TablixRows&gt;
+            &lt;/TablixBody&gt;
+            &lt;TablixColumnHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember /&gt;
+                &lt;TablixMember /&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixColumnHierarchy&gt;
+            &lt;TablixRowHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember /&gt;
+                &lt;TablixMember /&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixRowHierarchy&gt;
+            &lt;Top&gt;2.2637cm&lt;/Top&gt;
+            &lt;Left&gt;13.03985cm&lt;/Left&gt;
+            &lt;Height&gt;1.2cm&lt;/Height&gt;
+            &lt;Width&gt;4.0472cm&lt;/Width&gt;
+            &lt;ZIndex&gt;5&lt;/ZIndex&gt;
+            &lt;Style&gt;
+              &lt;Border&gt;
+                &lt;Style&gt;None&lt;/Style&gt;
+              &lt;/Border&gt;
+            &lt;/Style&gt;
+          &lt;/Tablix&gt;
+          &lt;Tablix Name="Tablix3"&gt;
+            &lt;TablixBody&gt;
+              &lt;TablixColumns&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;2.5cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;2.5cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+              &lt;/TablixColumns&gt;
+              &lt;TablixRows&gt;
+                &lt;TablixRow&gt;
+                  &lt;Height&gt;0.6cm&lt;/Height&gt;
+                  &lt;TablixCells&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox1"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;伝票番号：&lt;/Value&gt;
+                                  &lt;Style&gt;
+                                    &lt;FontFamily&gt;Meiryo&lt;/FontFamily&gt;
+                                  &lt;/Style&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox1&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="JournalId1"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;=Fields!JournalId1.Value&lt;/Value&gt;
+                                  &lt;Style /&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;JournalId1&lt;/rd:DefaultName&gt;
+                          &lt;CustomProperties&gt;
+                            &lt;CustomProperty&gt;
+                              &lt;Name&gt;AXDataType&lt;/Name&gt;
+                              &lt;Value&gt;String&lt;/Value&gt;
+                            &lt;/CustomProperty&gt;
+                          &lt;/CustomProperties&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                  &lt;/TablixCells&gt;
+                &lt;/TablixRow&gt;
+              &lt;/TablixRows&gt;
+            &lt;/TablixBody&gt;
+            &lt;TablixColumnHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember /&gt;
+                &lt;TablixMember /&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixColumnHierarchy&gt;
+            &lt;TablixRowHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember /&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixRowHierarchy&gt;
+            &lt;DataSetName&gt;Z_SonotaUkebaraiDS&lt;/DataSetName&gt;
+            &lt;Top&gt;1.13453cm&lt;/Top&gt;
+            &lt;Left&gt;5.18676cm&lt;/Left&gt;
+            &lt;Height&gt;0.6cm&lt;/Height&gt;
+            &lt;Width&gt;5cm&lt;/Width&gt;
+            &lt;ZIndex&gt;6&lt;/ZIndex&gt;
+            &lt;Style&gt;
+              &lt;Border&gt;
+                &lt;Style&gt;None&lt;/Style&gt;
+              &lt;/Border&gt;
+            &lt;/Style&gt;
+          &lt;/Tablix&gt;
+          &lt;Tablix Name="Tablix4"&gt;
+            &lt;TablixBody&gt;
+              &lt;TablixColumns&gt;
+                &lt;TablixColumn&gt;
+                  &lt;Width&gt;3.82292cm&lt;/Width&gt;
+                &lt;/TablixColumn&gt;
+              &lt;/TablixColumns&gt;
+              &lt;TablixRows&gt;
+                &lt;TablixRow&gt;
+                  &lt;Height&gt;0.89104cm&lt;/Height&gt;
+                  &lt;TablixCells&gt;
+                    &lt;TablixCell&gt;
+                      &lt;CellContents&gt;
+                        &lt;Textbox Name="Textbox21"&gt;
+                          &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+                          &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+                          &lt;Paragraphs&gt;
+                            &lt;Paragraph&gt;
+                              &lt;TextRuns&gt;
+                                &lt;TextRun&gt;
+                                  &lt;Value&gt;その他受払伝票&lt;/Value&gt;
+                                  &lt;Style&gt;
+                                    &lt;FontFamily&gt;Meiryo&lt;/FontFamily&gt;
+                                    &lt;FontSize&gt;14pt&lt;/FontSize&gt;
+                                    &lt;FontWeight&gt;Bold&lt;/FontWeight&gt;
+                                  &lt;/Style&gt;
+                                &lt;/TextRun&gt;
+                              &lt;/TextRuns&gt;
+                              &lt;Style /&gt;
+                            &lt;/Paragraph&gt;
+                          &lt;/Paragraphs&gt;
+                          &lt;rd:DefaultName&gt;Textbox21&lt;/rd:DefaultName&gt;
+                          &lt;Style&gt;
+                            &lt;Border&gt;
+                              &lt;Style&gt;None&lt;/Style&gt;
+                            &lt;/Border&gt;
+                            &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+                            &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+                            &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+                            &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+                          &lt;/Style&gt;
+                        &lt;/Textbox&gt;
+                      &lt;/CellContents&gt;
+                    &lt;/TablixCell&gt;
+                  &lt;/TablixCells&gt;
+                &lt;/TablixRow&gt;
+              &lt;/TablixRows&gt;
+            &lt;/TablixBody&gt;
+            &lt;TablixColumnHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember /&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixColumnHierarchy&gt;
+            &lt;TablixRowHierarchy&gt;
+              &lt;TablixMembers&gt;
+                &lt;TablixMember /&gt;
+              &lt;/TablixMembers&gt;
+            &lt;/TablixRowHierarchy&gt;
+            &lt;Top&gt;0.84349cm&lt;/Top&gt;
+            &lt;Left&gt;0.73325cm&lt;/Left&gt;
+            &lt;Height&gt;0.89104cm&lt;/Height&gt;
+            &lt;Width&gt;3.82292cm&lt;/Width&gt;
+            &lt;ZIndex&gt;7&lt;/ZIndex&gt;
+            &lt;Style&gt;
+              &lt;Border&gt;
+                &lt;Style&gt;None&lt;/Style&gt;
+              &lt;/Border&gt;
+            &lt;/Style&gt;
+          &lt;/Tablix&gt;
+          &lt;Textbox Name="Textbox2"&gt;
+            &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+            &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+            &lt;Paragraphs&gt;
+              &lt;Paragraph&gt;
+                &lt;TextRuns&gt;
+                  &lt;TextRun&gt;
+                    &lt;Value&gt;⇨&lt;/Value&gt;
+                    &lt;Style /&gt;
+                  &lt;/TextRun&gt;
+                &lt;/TextRuns&gt;
+                &lt;Style /&gt;
+              &lt;/Paragraph&gt;
+            &lt;/Paragraphs&gt;
+            &lt;rd:DefaultName&gt;Textbox2&lt;/rd:DefaultName&gt;
+            &lt;Top&gt;2.52961cm&lt;/Top&gt;
+            &lt;Left&gt;11.92742cm&lt;/Left&gt;
+            &lt;Height&gt;0.6cm&lt;/Height&gt;
+            &lt;Width&gt;0.47955cm&lt;/Width&gt;
+            &lt;ZIndex&gt;8&lt;/ZIndex&gt;
+            &lt;Style&gt;
+              &lt;Border&gt;
+                &lt;Style&gt;None&lt;/Style&gt;
+              &lt;/Border&gt;
+              &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+              &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+              &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+              &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+            &lt;/Style&gt;
+          &lt;/Textbox&gt;
+          &lt;Textbox Name="Textbox6"&gt;
+            &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+            &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+            &lt;Paragraphs&gt;
+              &lt;Paragraph&gt;
+                &lt;TextRuns&gt;
+                  &lt;TextRun&gt;
+                    &lt;Value&gt;⇨&lt;/Value&gt;
+                    &lt;Style /&gt;
+                  &lt;/TextRun&gt;
+                &lt;/TextRuns&gt;
+                &lt;Style /&gt;
+              &lt;/Paragraph&gt;
+            &lt;/Paragraphs&gt;
+            &lt;rd:DefaultName&gt;Textbox2&lt;/rd:DefaultName&gt;
+            &lt;Top&gt;2.52961cm&lt;/Top&gt;
+            &lt;Left&gt;17.55093cm&lt;/Left&gt;
+            &lt;Height&gt;0.6cm&lt;/Height&gt;
+            &lt;Width&gt;0.47955cm&lt;/Width&gt;
+            &lt;ZIndex&gt;9&lt;/ZIndex&gt;
+            &lt;Style&gt;
+              &lt;Border&gt;
+                &lt;Style&gt;None&lt;/Style&gt;
+              &lt;/Border&gt;
+              &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+              &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+              &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+              &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+            &lt;/Style&gt;
+          &lt;/Textbox&gt;
+          &lt;Textbox Name="Textbox8"&gt;
+            &lt;CanGrow&gt;true&lt;/CanGrow&gt;
+            &lt;KeepTogether&gt;true&lt;/KeepTogether&gt;
+            &lt;Paragraphs&gt;
+              &lt;Paragraph&gt;
+                &lt;TextRuns&gt;
+                  &lt;TextRun&gt;
+                    &lt;Value&gt;⇨&lt;/Value&gt;
+                    &lt;Style /&gt;
+                  &lt;/TextRun&gt;
+                &lt;/TextRuns&gt;
+                &lt;Style /&gt;
+              &lt;/Paragraph&gt;
+            &lt;/Paragraphs&gt;
+            &lt;rd:DefaultName&gt;Textbox2&lt;/rd:DefaultName&gt;
+            &lt;Top&gt;2.52961cm&lt;/Top&gt;
+            &lt;Left&gt;21.42347cm&lt;/Left&gt;
+            &lt;Height&gt;0.6cm&lt;/Height&gt;
+            &lt;Width&gt;0.47955cm&lt;/Width&gt;
+            &lt;ZIndex&gt;10&lt;/ZIndex&gt;
+            &lt;Style&gt;
+              &lt;Border&gt;
+                &lt;Style&gt;None&lt;/Style&gt;
+              &lt;/Border&gt;
+              &lt;PaddingLeft&gt;2pt&lt;/PaddingLeft&gt;
+              &lt;PaddingRight&gt;2pt&lt;/PaddingRight&gt;
+              &lt;PaddingTop&gt;2pt&lt;/PaddingTop&gt;
+              &lt;PaddingBottom&gt;2pt&lt;/PaddingBottom&gt;
+            &lt;/Style&gt;
+          &lt;/Textbox&gt;
+        &lt;/ReportItems&gt;
+        &lt;Height&gt;10.9614cm&lt;/Height&gt;
+        &lt;Style /&gt;
+      &lt;/Body&gt;
+      &lt;Width&gt;27.47162cm&lt;/Width&gt;
+      &lt;Page&gt;
+        &lt;PageHeight&gt;21cm&lt;/PageHeight&gt;
+        &lt;PageWidth&gt;29.7cm&lt;/PageWidth&gt;
+        &lt;InteractiveHeight&gt;11in&lt;/InteractiveHeight&gt;
+        &lt;InteractiveWidth&gt;8.5in&lt;/InteractiveWidth&gt;
+        &lt;LeftMargin&gt;2cm&lt;/LeftMargin&gt;
+        &lt;RightMargin&gt;1cm&lt;/RightMargin&gt;
+        &lt;TopMargin&gt;1cm&lt;/TopMargin&gt;
+        &lt;BottomMargin&gt;1cm&lt;/BottomMargin&gt;
+        &lt;ColumnSpacing&gt;1.27cm&lt;/ColumnSpacing&gt;
+        &lt;Style /&gt;
+      &lt;/Page&gt;
+    &lt;/ReportSection&gt;
+  &lt;/ReportSections&gt;
+  
+  &lt;Language&gt;en-US&lt;/Language&gt;
+  &lt;rd:ReportUnitType&gt;Cm&lt;/rd:ReportUnitType&gt;
+  &lt;rd:ExpressionDialog&gt;Microsoft.Dynamics.Framework.Design.Reports.ExpressionEditor.ExpressionEditorDialog, Microsoft.Dynamics.Framework.Design.Reports&lt;/rd:ExpressionDialog&gt;
+  &lt;rd:ReportID&gt;2929fc59-5c8e-4d88-9e5c-a9725848b187&lt;/rd:ReportID&gt;
+&lt;/Report&gt;</Text>
+			<DisableIndividualTransformation />
+		</AxReportDesign>
+	</Designs>
+	<EmbeddedImages />
+</AxReport>
