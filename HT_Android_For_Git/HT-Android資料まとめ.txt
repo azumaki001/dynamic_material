@@ -1,25 +1,19 @@
-①gitHubサンプル
 https://github.com/sertanyaman/native-android-integration-example-for-dynamics-365fo
 
 https://github.com/AzureAD/microsoft-authentication-library-for-android
 
 https://github.com/microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/JsonConsoleApplication/Program.cs
 
-②D365FOデータ統合各パターン：
-https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview
+https://community.dynamics.com/crm/f/microsoft-dynamics-crm-forum/385876/dynamics-365-crm-android-java-kotlin-integration/1034248#1034248
 
-MS自社のAndroidAPP
-https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-android
-
-③ODataV4.0　AIP
-https://docs.oasis-open.org/odata/odata/v4.0/
-
-validate dataEntity is public or not:
-/data/ReleasedProducts?cross-company=true
-
-④その他
 https://community.dynamics.com/365/financeandoperations/f/dynamics-365-for-finance-and-operations-forum/412362/integration-with-third-party-using-odata-and-data-entities
 
 https://dynamics-chronicles.com/article/tutorial-how-connect-step-step-d365-postman
 
 http://dynamics365musings.com/use-postman-to-call-d365-data-entities/
+
+Azure compute unit一覧：
+https://docs.microsoft.com/en-us/azure/virtual-machines/acu
+
+Azure VM上でAndorid開発できるまでの手順（V3シリーズのCPUが必要な模様）：
+https://qiita.com/tajima440/items/e8c39b3bd9b8f32cfbfe
