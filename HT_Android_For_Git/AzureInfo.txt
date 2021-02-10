@@ -1,0 +1,25 @@
+﻿Dev31
+
+テナントID:0cd81eac-30ea-4019-9f64-79ffd57055e6
+
+ClientID：4a736dde-fd32-4bd5-9c24-992a4a8f0204
+
+SecretID：7a76d38b-e748-466b-9ad0-193a71e9a298
+
+SecretValue：Io6.WjpKYM9~aCeWxRi~f_3Jjb8a45_dlz
+
+https://login.microsoftonline.com/0cd81eac-30ea-4019-9f64-79ffd57055e6/oauth2/v2.0/token
+
+https://prsdev03fd7e4bd3f6b457fedevaos.cloudax.dynamics.com/
+
+DevHT
+
+テナントID:89e08929-475c-4084-9470-0c70708a418d
+
+ClientID：76554486-d440-4c3c-9f2a-d67a6721d1df
+
+SecretID：3b534370-f1da-4a2b-8cb2-19c17951f01c
+
+SecretValue： _BBw2rhdB7hR6_9eF5j~YB3yFNtIK.zW0Q
+
+https://prshtdev026b98e3894828bc25devaos.cloudax.dynamics.com/
