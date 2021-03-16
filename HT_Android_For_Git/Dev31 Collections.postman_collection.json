@@ -1,0 +1,350 @@
+{
+	"info": {
+		"_postman_id": "fa930cb2-c465-4e81-b20b-606405efba83",
+		"name": "Dev31 Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Dev31 AuthCode",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);\r",
+							"postman.setEnvironmentVariable(\"access_token\", jsonData.access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "scope",
+						"value": "https://management.azure.com/user_impersonation",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "client_id",
+							"value": "{{client_id_mcsy}}",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "resource",
+							"value": "https://prsdev03fd7e4bd3f6b457fedevaos.cloudax.dynamics.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret_value_mcsy}}",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "{{Scope_CC_Dev31}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{tokenV2Url_mcsy}}",
+					"host": [
+						"{{tokenV2Url_mcsy}}"
+					]
+				},
+				"description": "Get Dev31 AuthCode"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dev31 DataEntity",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{Dev31Url}}/data/Titles?$top=2",
+					"host": [
+						"{{Dev31Url}}"
+					],
+					"path": [
+						"data",
+						"Titles"
+					],
+					"query": [
+						{
+							"key": "$top",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Get Dev31 DataEntity"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dev31 AUTO",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "scope",
+							"value": "{{Scope_CC_Dev31}}",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "{{authUrl_mcsy}}",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "{{tokenV2Url_mcsy}}",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "{{client_secret_value_mcsy}}",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{client_id_mcsy}}",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "{{Dev31Url}}",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "state",
+							"value": "State",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenName",
+							"value": "Dev31 access token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "resource",
+						"value": "{{Dev31Url}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{Dev31Url}}/data/Titles?$top=3",
+					"host": [
+						"{{Dev31Url}}"
+					],
+					"path": [
+						"data",
+						"Titles"
+					],
+					"query": [
+						{
+							"key": "$top",
+							"value": "3"
+						}
+					]
+				},
+				"description": "Get D365 Token Test"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dev HT Token",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "scope",
+							"value": "{{Scope_AC}}",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "NDCO201906",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "0151520@mchcgr.com",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "DevHT access token",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{client_id}}",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "{{tokenV2Url}}",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "state",
+							"value": "State",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "authUrl",
+							"value": "{{authUrl}}",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "{{callbackUrl}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{DevHTUrl}}data/Titles?$top=3",
+					"host": [
+						"{{DevHTUrl}}data"
+					],
+					"path": [
+						"Titles"
+					],
+					"query": [
+						{
+							"key": "$top",
+							"value": "3"
+						}
+					]
+				},
+				"description": "Get Dev HT Token"
+			},
+			"response": []
+		}
+	]
+}
